@@ -1003,5 +1003,15 @@ place-items: start;
     line-height: 2rem;
   }
 
+  .overlay__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+
+  .overlay__description {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
