@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😁</title>
+    <link rel="stylesheet" type= "text/css"href="css\main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.js"></script>    
+
+</head>
+<body>
+    <canvas class="orb-canvas"></canvas>
+
+<!-- Overlay -->
+<div class="overlay">
+  <!-- Overlay inner wrapper -->
+  <div class="overlay__inner">
+    <!-- Title -->
+    <h1 class="overlay__title">
+      Hey, I'm
+      <span class="text-gradient">Jerry Velasquez</span>, Front-end Web Developer 
+    </h1>
+    <!-- Description -->
+    <p class="overlay__description">
+      Wanna work together? 
+      <strong>Take a look at my portfolio!</strong>
+    </p>
+    <!-- Buttons -->
+    <div class="overlay__btns">
+      <!-- <button class="overlay__btn overlay__btn--transparent">
+Just a button</button> -->
+      <button class="overlay__btn overlay__btn--colors">
+        <span>Randomise Colors</span>
+        <span class="overlay__btn-emoji">🎨</span>
+      </button>
+      <!-- Location // nav -->
+      <div class="location">LA - CA</div>
+      <div class="nav">
+        <ul class="nav-list">
+          <li class="nav-home">home</li>
+          <li class="nav-skills">skills</li>
+          <li class="nav-about">about </li>
+          <li class="nav-contact">contact </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="skills-wrapper">
+  <div class="skills-title">Projects</div>
+</div>
+
+<div class="ABC-wrapper">
+  
+  <!-- Card 2A -->
+  <!-- Overlay -->
+  <div class="overlay_2A hovered">
+    <!-- Vertical flex wrapper -->
+    <div class="ontop-wrapper" onclick="neumorphic()">
+      <!-- Horizontal flex wrapper  -->
+      <div class="side-wrapper"> 
+        <div class="side-1">Neumorphic Style Checkout Form</div>
+          <div class="side-2">
+            <img src="photos\neumorphic checkout 2.png" alt="neumorphic checkout" class="qasa">
+          </div> 
+      </div>
+      <!-- Bottom half with information-->
+      <div class="bottom-half">
+        <div class="text-container">
+         A checkout form concept in neumorphic style.  
+        </div>
+         </div>
+
+    </div>
+
+  </div>
+  
+  <!-- Card 2B -->
+  <div class="overlay_2B hovered" >
+    <!-- Vertical flex wrapper -->
+    <div class="ontop-wrapper TWOB" onclick="banana()">
+      <!-- Horizontal flex wrapper  -->
+      <div class="side-wrapper"> 
+        <div class="side-1">Banana Fax</div>
+          <div class="side-2 fax">
+            <img src="photos\banana fax.png" alt="banana fax" class="banana">
+          </div> 
+      </div>
+      <!-- Bottom half with information-->
+      <div class="bottom-half">
+        <div class="text-container middle">
+         Did this one for fun, it's just a thing that displays various interesting banana facts. Try clicking the buttons!  
+        </div>
+         </div>
+
+    </div>
+  </div>
+  
+  <!-- Card 2C -->
+  
+  <div class="overlay_2C hovered">
+    <!-- Vertical flex wrapper -->
+    <div class="ontop-wrapper TWOC" onclick="galaxy()">
+      <!-- Horizontal flex wrapper  -->
+      <div class="side-wrapper"> 
+        <div class="side-1">Galaxy Very Far Away</div>
+          <div class="side-2 space">
+            <img src="photos\galaxy far away.png" alt="galaxy thing" class="galaxy">
+          </div> 
+      </div>
+      <!-- Bottom half with information-->
+      <div class="bottom-half">
+        <div class="text-container">
+          Space travel concept page. I wanted to make a darker one so this is what came to mind. In the end, it seemed more cinematic than dark, however that's not a bad thing.
+        </div>
+         </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="about-me-wrapper">
+  <div class="about-me-title">About Me</div>
+</div>
+
+<!-- Card #3 -->
+<!-- Overlay -->
+<div class="overlay_3">
+  <!-- Flex wrapper to place everything on top of each other -->
+    <div class="overlay_3_wrapper">
+      
+      <div class="about-me">
+        <p class="sentence-1">
+          I am a front end dev from Los Angeles, CA and I enjoy coding UI/UX designs & animations
+        </p>
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="about-me">
+        <p class="sentence-2">
+          I use HTML, CSS, and Javascript in order to create websites and enhance them with unique elements. 
+        </p>          
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="about-me">
+        <p class="sentence-3">
+          So far I have a few projects I have worked on but I plan to work on a couple more, possibly with a new library & most likely something i haven’t tried before.
+        </p>
+      </div>
+    </div>
+</div>
+
+
+<!-- Card # 4 -->
+
+<div class="placement">
+  <div class="overlay_4 mobile-tag">
+    <div class="inner-wrapper">
+
+        <div class="title-wrapper">
+          <div class="contact-title">
+            LET'S GET IN TOUCH
+          </div>
+        </div>
+
+        <div class="horizontal-flex">
+          
+          <div class="left-side">
+
+            <div class="text-box-1">
+              Copy my email
+            </div>
+
+            <div class="horizontal-line-x"></div>
+
+
+            <div class="text-box-2">
+              Or check out my github, codepen, or linkedin
+            </div>
+
+          </div>
+
+
+          <div class="right-side">
+            <div class="email">
+            VELASQUEZJERRY98@GMAIL.COM
+            </div>
+
+            <div class="horizontal-line-x"></div>
+
+
+            <div class="circle-flex">
+                <div class="circle hovered" onclick="github()">
+                  GIT
+                </div>
+                <div class="circle hovered" onclick="codepen()">
+                  CO
+                </div>
+                <div class="circle hovered" onclick="linkedin()">
+                  LI
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+<script type="module" src="JS\main.js"></script>
+<script src="JS/secondary.js"></script>
+
+</body>
+</html>
