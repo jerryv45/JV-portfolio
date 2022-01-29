@@ -937,7 +937,7 @@ place-items: start;
 
   .overlay_3 {
     width: 90vw;
-    height: 90vh;
+    min-height: 90vh;
     padding: 1rem; 
   }
 
@@ -945,6 +945,12 @@ place-items: start;
     font-size: 1.25rem;
     padding: 2rem;
   }
+  
+  .horizontal-line {
+    margin: 5rem;
+  }
+
+
 
   .placement {
     width: 90vw;
