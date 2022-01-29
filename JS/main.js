@@ -26,9 +26,9 @@ class ColorPalette {
 
   setColors() {
     // pick a random hue somewhere between 220 and 360
-    this.hue = ~~random(220, 360);
+    this.hue = ~~random(120, 360);
     this.complimentaryHue1 = this.hue + 30;
-    this.complimentaryHue2 = this.hue + 60;
+    this.complimentaryHue2 = this.hue + 85;
     // define a fixed saturation and lightness
     this.saturation = 95;
     this.lightness = 50;
@@ -108,25 +108,25 @@ class Orb {
     this.graphics = new PIXI.Graphics();
     this.graphics.alpha = 0.825;
 
-    // 250ms after the last window resize event, recalculate orb positions.
+    // 100ms after the last window resize event, recalculate orb positions.
     window.addEventListener(
       'resize',
       debounce(() => {
         this.bounds = this.setBounds();
-      }, 250)
+      }, 100)
     );
   }
   
   setBounds() {
   // how far from the { x, y } origin can each orb move
   const maxDist =
-      window.innerWidth < 1000 ? window.innerWidth / 3 : window.innerWidth / 5;
+      window.innerWidth < 700 ? window.innerWidth / 1 : window.innerWidth / 5;
   // the { x, y } origin for each orb (the bottom right of the screen)
-  const originX = window.innerWidth / 1.25;
+  let originX = window.innerWidth / 1.25;
   const originY =
       window.innerWidth < 1000
       ? window.innerHeight
-      : window.innerHeight / 1.575;
+      : window.innerHeight / 1.275;
 
   // allow each orb to move x distance away from it's { x, y }origin
   return {
@@ -202,7 +202,6 @@ app.stage.filters = [new KawaseBlurFilter(30, 10, true)];
 const orbs = [];
 
 for (let i = 0; i < 10; i++) {
-  // each orb will be black, just for now
   const orb = new Orb(colorPalette.randomColor());
   app.stage.addChild(orb.graphics);
 
