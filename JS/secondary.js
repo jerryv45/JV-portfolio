@@ -44,7 +44,7 @@ function banana() {
 }
 
 function galaxy() {
-    window.open('https://codepen.io/jerryv45/full/yLowxeW');
+    window.open('https://annysflowersla.com');
 }
 
 function github() {
